@@ -54,7 +54,7 @@
                         </ul>
                     </li>
 
-                    
+
                 </ul>
                 <form class="d-flex" role="search">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -64,44 +64,49 @@
         </div>
     </nav>
 
-    <section class="calculadora-imc text-center container col-5 border ">
+    <div class="row container-lg justify-content-center">
+        <div class="calculadora-imc p-1 text-center col-6 mb-3  border container offset-1 ">
 
-        <h3 class="titulo text-info "> Calcule seu - IMC </h2>
+            <h3 class="titulo text-info "> Calcule seu - IMC </h3>
 
-            <div class=" input-group mb-3 nome input">
-                <span class="input-group-text" id="basic-addon1">Nome:</span>
+            <div class="input-group mb-3 nome input">
+                <span class="input-group-text" id="basic-addon1 ">Nome:</span>
                 <input type="text" class="form-control " id="nome">
             </div>
-            <div class="input-group mb-3 input">
+            <div class="input-group  mb-3 input">
                 <span class="input-group-text">Peso:</span>
                 <input type="text" class="form-control" id="peso">
             </div>
-            <div class="input-group mb-3 input">
+            <div class="input-group  mb-3 input">
                 <span class="input-group-text">Altura:
                 </span>
                 <input type="text" id="altura" class="form-control">
 
             </div>
 
-            <button class="btn btn-outline-primary" id="calcular">Calcular Agora</button>
+            <button class="btn  mb-3 btn-outline-primary" id="calcular">Calcular Agora</button>
 
-            <div class="input-group">
-                <span class="input-group-text">Resultado</span>
+            <div class="input-group  mb-3 mr-1">
+
                 <textarea class="resultado form-control" aria-label="With textarea resultado" id="resultado"></textarea>
             </div>
 
-
-    </section>
-    <div class="card" style="width: 18rem;">
-        <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
-            <a href="#" class="card-link">Card link</a>
-            <a href="#" class="card-link">Another link</a>
         </div>
+
+        <div class="card col-6  ml-3" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's
+                    content.</p>
+                <a href="#" class="card-link">Card link</a>
+                <a href="#" class="card-link">Another link</a>
+            </div>
+        </div>
+
     </div>
+
 
 
     <script src="index.js"></script>
