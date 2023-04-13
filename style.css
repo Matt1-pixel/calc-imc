@@ -1,0 +1,13 @@
+@media (max-width: 700px) {
+    .calculadora-imc {
+    width: 50vw; 
+}
+@media(max-width: 500px) {
+.calculadora-imc {
+    width: 100vw;
+   margin: auto ;
+   margin-left: 5vw;
+    
+}
+}
+}
