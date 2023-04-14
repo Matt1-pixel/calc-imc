@@ -9,18 +9,18 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <!-- <link rel="stylesheet" href="reset.css"> -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="src/style.css">
 
 </head>
 
 <body>
 
-    <nav class=" navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid ">
+    <nav class="navbar navbar-expand-lg mb-5 bg-body-tertiary">
+        <div class="container-fluid">
             <nav class="navbar bg-body-tertiary">
                 <div class="container">
                     <a class="navbar-brand" href="#">
-                        <img src="/docs/5.3/assets/brand/bootstrap-logo.svg" alt="Bootstrap" width="30" height="24">
+                        <img src="src/photo_2023-04-13_18-54-30.jpg" alt="IMC" width="70" height="54">
                     </a>
                 </div>
             </nav>
@@ -39,20 +39,6 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#">Link</a>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Dropdown
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </li>
 
 
                 </ul>
@@ -64,45 +50,86 @@
         </div>
     </nav>
 
-    <div class="row  container-fluid justify-content-center mt-5">
-        <div class="calculadora-imc  p-1 text-center col-6 mb-3  border container offset-3 ">
 
-            <h3 class="titulo text-info "> Calcule seu - IMC </h3>
+    <h1></h1>
 
-            <div class="input-group mb-3 nome input">
-                <span class="input-group-text" id="basic-addon1 ">Nome:</span>
-                <input type="text" class="form-control " id="nome">
+    <div id="carouselExampleIndicators" class="carousel slide mb-5 mt-5">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner ">
+            <div class="carousel-item active ">
+                <img src="src/Captura de tela 2023-04-13 234156 (1).png" class="d-block w-50 mx-auto"
+                    alt="pessoa saudavel">
             </div>
-            <div class="input-group  mb-3 input">
-                <span class="input-group-text">Peso:</span>
-                <input type="text" class="form-control" id="peso">
+            <div class="carousel-item">
+                <img src="src/receitas-saudaveis (1).jpg" class="d-block w-50 mx-auto" alt="pessoa saudavel">
             </div>
-            <div class="input-group  mb-3 input">
-                <span class="input-group-text">Altura:
-                </span>
-                <input type="text" id="altura" class="form-control">
+            <div class="carousel-item">
+                <img src="src/medico-medindo.jpg" class="d-block w-50 mx-auto" alt="pessoa saudavel">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <div class="row principal container-fluid justify-content-center  mt-5">
+        <div class="col-sm-3">
+            <div class="calculadora-imc shadow  p-1 text-center col-6 mb-3  border  mx-auto offset-1">
+
+                <h3 class="titulo text-warning "> Calcule seu - IMC </h3>
+
+                <div class="input-group mb-3 nome input">
+                    <span class="input-group-text" id="basic-addon1 ">Nome:</span>
+                    <input type="text" class="form-control " id="nome">
+                </div>
+                <div class="input-group  mb-3 input">
+                    <span class="input-group-text">Peso:</span>
+                    <input type="text" class="form-control" id="peso">
+                </div>
+                <div class="input-group  mb-3 input">
+                    <span class="input-group-text">Altura:
+                    </span>
+                    <input type="text" id="altura" class="form-control">
+
+                </div>
+
+                <button class="btn  mb-3 btn-outline-primary" id="calcular">Calcular Agora</button>
+
+                <div class="input-group  mb-3 mr-1">
+
+                    <textarea class="resultado form-control" aria-label="With textarea resultado"
+                        id="resultado"></textarea>
+                </div>
 
             </div>
-
-            <button class="btn  mb-3 btn-outline-primary" id="calcular">Calcular Agora</button>
-
-            <div class="input-group  mb-3 mr-1">
-
-                <textarea class="resultado form-control" aria-label="With textarea resultado" id="resultado"></textarea>
-            </div>
-
         </div>
 
-        <div class="card col-6  ml-3" style="width: 18rem;">
+        <div class="card col-6 shadow mx-auto text-center" style="width: 18rem;">
             <div class="card-body">
                 <h5 class="card-title">O que é IMC ?</h5>
-                
-                <p class="card-text">O IMC é uma medida importante para detectar problemas de saúde relacionados ao peso. É uma medida geral e outras medidas devem ser levadas em consideração. Consultar um profissional de saúde é sempre recomendável para obter recomendações personalizadas</p>
-                <a href="#" class="card-link">Card link</a>
-                <a href="#" class="card-link">Another link</a>
-            </div>
-        </div>
 
+                <p class="card-text">O IMC é uma medida importante para detectar problemas de saúde relacionados ao
+                    peso. É uma medida geral e outras medidas devem ser levadas em consideração. Consultar um
+                    profissional de saúde é sempre recomendável para obter recomendações personalizadas</p>
+
+            </div>
+
+        
+    </div>
     </div>
 
 
