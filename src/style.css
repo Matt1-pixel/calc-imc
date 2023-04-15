@@ -7,9 +7,6 @@ background: linear-gradient(45deg, rgba(89,246,73,1) 10%, rgba(80,250,247,1) 100
 background-color: #00BFA5;
 
 }
-
-
-
 .principal {
     margin-bottom: 22vh;
 }
@@ -17,7 +14,9 @@ background-color: #00BFA5;
 
 @media (max-width: 700px) {
 .calculadora-imc {
-    width: 50vw;
+    width: 70vw;
+
+
 }
 @media (max-width: 500px) {
     .calculadora-imc {
